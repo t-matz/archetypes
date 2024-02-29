@@ -12,7 +12,7 @@
     <requiredProperty key="copyright" />
     <requiredProperty key="copyrightYear">
         <defaultValue>
-            2021
+            2024
         </defaultValue>
     </requiredProperty>
     <requiredProperty key="version">
@@ -35,16 +35,7 @@
       <includes>
         <include>.gitreview</include>
         <include>pom.xml</include>
-        <include>src/**</include>
       </includes>
-    </fileSet>
-
-    <!-- karaf distro -->
-    <fileSet filtered="true" encoding="UTF-8">
-        <directory>karaf</directory>
-        <includes>
-            <include>pom.xml</include>
-        </includes>
     </fileSet>
 
     <!-- features -->
@@ -102,38 +93,5 @@
        </includes>
      </fileSet>
 
-     <!-- cli -->
-     <fileSet filtered="true" encoding="UTF-8">
-        <directory>cli</directory>
-        <includes>
-            <include>pom.xml</include>
-        </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-        <directory>cli/src/main/java</directory>
-        <includes>
-            <include>**/*.java</include>
-         </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-        <directory>cli/src/main/resources/OSGI-INF/blueprint</directory>
-        <includes>
-            <include>**/*.xml</include>
-         </includes>
-    </fileSet>
-
-     <!-- it -->
-     <fileSet filtered="true" encoding="UTF-8">
-        <directory>it</directory>
-        <includes>
-            <include>pom.xml</include>
-        </includes>
-    </fileSet>
-    <fileSet filtered="true" encoding="UTF-8">
-        <directory>it/src/test/java</directory>
-        <includes>
-            <include>**/*.java</include>
-         </includes>
-    </fileSet>
   </fileSets>
 </archetype-descriptor>

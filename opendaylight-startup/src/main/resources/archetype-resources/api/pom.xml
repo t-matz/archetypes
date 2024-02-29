@@ -13,7 +13,7 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   <parent>
     <groupId>org.opendaylight.mdsal</groupId>
     <artifactId>binding-parent</artifactId>
-    <version>6.0.8</version>
+    <version>12.0.1</version>
     <relativePath/>
   </parent>
 
@@ -25,22 +25,4 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
   <name>ODL :: ${project.groupId} :: ${project.artifactId}</name>
   <packaging>bundle</packaging>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <propertyExpansion>checkstyle.violationSeverity=error</propertyExpansion>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.github.spotbugs</groupId>
-        <artifactId>spotbugs-maven-plugin</artifactId>
-        <configuration>
-          <failOnError>true</failOnError>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
